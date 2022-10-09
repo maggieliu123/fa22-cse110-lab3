@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2048px-Circle-icons-computer.svg.png">
+</head>
+<body>
+    <header>
+        <h3>Sections</h3>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#updates">Updates</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#recording">Recording</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Wild Life Conservation on Pandora</h1>
+        <h3>Meeting #303 - brainstorming</h3>
+        <hr>
+        <section>
+            <h2 id="attendance">Attendance</h2>
+            <ul>
+                <li><input type="checkbox">Jake Sully</li>
+                <li><input type="checkbox">Neytiri</li>
+                <li><input type="checkbox">Tsu'Tey</li>
+                <li><input type="checkbox">Grace Augustine</li>
+                <li><input type="checkbox">Norm Spellman</li>
+                <li><input type="checkbox">Trudy Chacon</li>
+                <li><input type="checkbox">Parker Selfridge</li>
+                <li><input type="checkbox">Quaritch</li>
+                <li><input type="checkbox">Lyle Wainfleet</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="agenda">Agenda</h2>
+            <ol>
+                <li>Unfinished business</li>
+                <li>Current Solutions</li>
+                <li>Current data</li>
+                <li>Evaluation</li>
+                <li>Plan of Execution</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="updates">Updates</h2>
+            <ul>
+                <li>
+                    <p>The horse clans are struggling with <span><b>food shortage</b></span> from the zebronyx migrations.</p>
+                    <img src="https://plus.unsplash.com/premium_photo-1661822934822-f71f72f53471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1pZ3JhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Zebra migrations">
+                </li>
+                <li>
+                    <p> The ikran clans in the north are facing water shortages as the weather be dries up the waterbeds</p>
+                </li> 
+                <li>
+                    <details>
+                        <summary><i>The Study of Advanced Scientific Experiments in Avatar- A Postcolonial Perspective</i> by P. Vijayasekaran and G. Alan</summary>
+                        <p><a href="https://iopscience.iop.org/article/10.1088/1757-899X/1012/1/012064/pdf">This</a> paper proposes 
+                        to study the colonial effects on the environment that is Pandora. It is an in-depth analysis about the scientific 
+                        advancements used for human colonization. It looks into the negative impacts and conflicts caused between multiple
+                        invested and interested parties. The study delves into the reverberated consequences of fuel, mass hunts, unnatural
+                        disturbance, and destruction of wildlife caused by intentional human actions.</p>
+                    </details>
+                </li>
+                <li>
+                    <p><strong>DO <em>NOT</em> ENTER THE MESSALEAN MARSHES! TOXIC GAS LEAK DETECTED </strong></p>
+                </li>
+                    
+            </ul>
+        </section>
+        <section>
+            <h2 id="vote">Vote</h2>
+            <form onsubmit="alert('Vote submitted')" method="get">
+                <label for="priority">Choose the highest priority:</label>
+                <input list="priorities" name="priority" id="priority">
+                <datalist id="priorities">
+                    <option value="Horse Clan">
+                    <option value="Ikran Clan">
+                    <option value="Research">
+                    <option value="Gas Leak">
+                </datalist>
+
+                <p>Should we relocate the zebronyx?</p>
+                <input type="radio" id="yes" name="yes" >
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="no" >
+                <label for="no">No</label>
+                <br><br>
+            
+                <label for="relocation">Where to relocate:</label>
+                <select name="relocation" id="relocation">
+                    <option value="blank">(blank)</option>
+                    <option value="peninsula">Toll Peninsula</option>
+                    <option value="welands">Ossean Wetlands</option>
+                    <option value="peaks">Glacero's Peaks</option>
+                    <option value="peninsula">None of the above</option>
+                </select>
+                <br><br>
+                <button>Submit</button>
+            </form>
+              
+        </section>
+        <section>
+            <h2 id="feedback">Feedback</h2>
+            <form onsubmit="alert('Feedback saved')">
+                <p>Please add feedback (comments, questions, and concerns) during the meeting</p>
+                <textarea name="feedback" rows="10" cols="100"></textarea>
+                <br>
+                <button>Submit</button>
+            </form>
+              
+        </section>
+        <section>
+            <h2 id="recording">Recording</h2>
+            <video width="400" controls>
+                <source src="Way-of-the-Water.mp4" type="video/mp4">
+            </video>
+            <p>Video courtesy of <a href="https://youtu.be/NZrX_ES93JA">ONE Media</a>.</p>
+
+            <audio controls>
+                <source src="Rick-Roll.mp3" type="audio/mpeg">
+            </audio>
+            <p>Video courtesy of <a href="https://youtu.be/xvFZjo5PgG0">Duran</a>.</p>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <h3>Attendance sign in</h3>
+        <form onsubmit="alert('Signed in')">
+            <fieldset>
+                <legend>Sign in Form:</legend>
+                <label for="fname"> Name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+    
+</body>
+</html>
