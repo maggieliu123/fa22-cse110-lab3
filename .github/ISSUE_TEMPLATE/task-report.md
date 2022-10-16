@@ -3,7 +3,7 @@ name: Task Report
 about: This is to assign new tasks to be completed
 title: TASK
 labels: ''
-assignees: ''
+assignees: maggieliu123
 
 ---
 
