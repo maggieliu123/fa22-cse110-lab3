@@ -1,3 +1,3 @@
-# Lab 2 - Starter
-https://maggieliu123.github.io/Lab2_Starter/
-hi
+# Lab 3 GitHub Page URL
+https://maggieliu123.github.io/fa22-cse110-lab3/
+
