@@ -1,7 +1,10 @@
 /* Body of the page */
-body {
-    background-color: rgb(90, 172, 207);             /* background */
+@media (min-width: 35rem) {
+    body {
+        background-color: rgb(90, 172, 207);             /* background */
+    }
 }
+
 /* Title of table of contents */
 .sections {
     color: #000;                                     /* color */
@@ -86,25 +89,28 @@ p {
     align-items: stretch;                               /* flexbox */
 }
 /* grid containg updates, votes, and recording */
-.grid-container {
-    display: grid;                                      /* grid */
-    grid-template-columns: auto auto auto;              /* grid */
-    grid-template-areas:                                /* grid */
-    "updates voting recording";
-    gap: 20px;                                          /* grid */
+@media (min-width: 90rem) {
+    .grid-container {
+        display: grid;                                      /* grid */
+        grid-template-columns: auto auto auto;              /* grid */
+        grid-template-areas:                                /* grid */
+        "updates voting recording";
+        gap: 20px;                                          /* grid */
+    }
+    /* update col */
+    .grid-col-1 {
+        grid-area: updates;
+    }
+    /* voting col */
+    .grid-col-2 {
+        grid-area: voting;
+    }
+    /* recording col */
+    .grid-col-3 {
+        grid-area: recording;
+    }
 }
-/* update col */
-.grid-col-1 {
-    grid-area: updates;
-}
-/* voting col */
-.grid-col-2 {
-    grid-area: voting;
-}
-/* recording col */
-.grid-col-3 {
-    grid-area: recording;
-}
+
 
 /* image */
 .img {
@@ -119,3 +125,4 @@ button:hover {
 a:active {
     color: red;
 }
+
