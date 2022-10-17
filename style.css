@@ -59,15 +59,48 @@ h1, h2 {
 
 /* All paragraphs */
 p {
-    display: block;                                     /* display */
-    width: 50%;
+    display: inline-block;                                     /* display */
 }
+
 
 /* only voting questions */
 .vote-questions > p {
     font-weight: bold;
+    min-width: 50%;                                   /* sizing */
 }
 
+/* hidden line */
 .hidden {
     display: none;                                      /* display */
 }
+
+/* agenda and attendance */
+.first-row {
+    display: flex;                                      /* flexbox */
+    flex-direction: row;                                /* flexbox */
+    justify-content: space-evenly;                      /* flexbox */
+    align-items: stretch;                               /* flexbox */
+}
+/* grid containg updates, votes, and recording */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "updates voting recording";
+    gap: 20px;
+}
+/* update col */
+.grid-col-1 {
+    grid-area: updates;
+}
+/* voting col */
+.grid-col-2 {
+    grid-area: voting;
+}
+/* recording col */
+.grid-col-3 {
+    grid-area: recording;
+}
+
+
+
