@@ -1,16 +1,58 @@
-/* Style the body of the page */
+/* Body of the page */
 body {
-    background-color: rgb(90, 172, 207);
+    background-color: rgb(90, 172, 207);             /* background */
 }
-/* Style the sections of the page */
+/* Title of table of contents */
 .sections {
-    border: 4px solid;
-    border-width: medium;
-    border-color: hsla(303, 91%, 50%, 0.6);
-    border-radius: 15px;
-    color: #000;
+    color: #000;                                     /* color */
+    border: 4px;                        
+    border-style: solid;                               /* border */
+    border-width: medium;                              /* border */
+    border-color: hsla(303, 91%, 50%, 0.6);          /* border, color */
+    border-radius: 15px;                               /* border */
+    width: 200px;                                      /* absolute unit */
+    max-height: 100px;                                  /* sizing */
+    height: 25px;                                      /* sizing, absolute unit */
+    margin: 0px 0px 0px 0px;                                  /* margin short */ 
+    text-align: center;                              
 }
 
-#meeting-name {
-    color: red;
+/* Content of table of contents */
+li[class="section-link"] {
+    width: fit-content;                                 /* sizing */
+    background-color: yellow;
+    margin-bottom: 5px;                                /* margin, absolute unit */ 
+    margin-top: 5px;                                     /* margin long */ 
+    margin-left: 10px;                                   /* margin long */ 
+    margin-right: 10px;                                  /* margin long */ 
+}
+
+/* Title of the meeting */
+#meeting-title {
+    color: red;                                      /* color */
+    border: 4px dotted;
+    border-width: medium;
+    border-color: rgb(255, 255, 255);                /* color */
+    border-radius: 15px;
+    width: 50%;                                        /* relative unit */
+    max-width: 1000px;                                  /* sizing */
+    text-align: center;                                /* relative unit */
+    margin: auto;                                      /* margin auto, relative unit */
+    padding-top: 10px;                                  /* padding long */
+    padding-bottom: 10px;                               /* padding long */
+    padding-left: 0px;                                  /* padding long */
+    padding-right: 0px;                                 /* padding long */
+
+}
+
+/* Subtitle of meeting */
+#meeting-subtitle {
+    text-align: center;                                 /* text */
+    padding: 0px 0px 10px 0px;                         /* padding short */
+}
+
+/* section titles */
+h2 {
+    text-decoration: underline;                         /* text */
+    color:black;                                      /* text */
 }
