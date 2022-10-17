@@ -70,8 +70,8 @@ p {
 }
 
 
-/* only voting questions */
-.vote-questions > p {
+/* only voting questions */                            /*descendent sibling*/
+.vote-questions p {                                     /*combining two selectors*/
     font-weight: bold;
     min-width: 50%;                                   /* sizing */
 }
@@ -129,4 +129,17 @@ a:active {
 * button {
     border-color: gray;
     border-radius: 5px;
+}
+
+h1 + h3 {                                           /*adjacent sibling*/
+    color: green;
+}
+
+div ~ p {                                           /*general sibling*/
+    color: red;
+    display: none;
+}
+
+details > p {                                       /* child combinator*/
+    font-style: italic;
 }
