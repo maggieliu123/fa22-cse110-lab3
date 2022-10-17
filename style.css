@@ -52,7 +52,22 @@ li[class="section-link"] {
 }
 
 /* section titles */
-h2 {
+h1, h2 {
     text-decoration: underline;                         /* text */
     color:black;                                      /* text */
+}
+
+/* All paragraphs */
+p {
+    display: block;                                     /* display */
+    width: 50%;
+}
+
+/* only voting questions */
+.vote-questions > p {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;                                      /* display */
 }
