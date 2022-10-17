@@ -14,6 +14,7 @@ body {
     max-height: 100px;                                  /* sizing */
     height: 25px;                                      /* sizing, absolute unit */
     margin: 0px 0px 0px 0px;                                  /* margin short */ 
+    position: relative;                                 /* position*/
     text-align: center;                              
 }
 
@@ -83,11 +84,11 @@ p {
 }
 /* grid containg updates, votes, and recording */
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
+    display: grid;                                      /* grid */
+    grid-template-columns: auto auto auto;              /* grid */
+    grid-template-areas:                                /* grid */
     "updates voting recording";
-    gap: 20px;
+    gap: 20px;                                          /* grid */
 }
 /* update col */
 .grid-col-1 {
@@ -102,5 +103,8 @@ p {
     grid-area: recording;
 }
 
-
+/* image */
+.img {
+    position: static;                                   /* position */
+}
 
