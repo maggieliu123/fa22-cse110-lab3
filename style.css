@@ -15,7 +15,8 @@ body {
     height: 25px;                                      /* sizing, absolute unit */
     margin: 0px 0px 0px 0px;                                  /* margin short */ 
     position: relative;                                 /* position*/
-    text-align: center;                              
+    text-align: center;
+    font-family: "Courier New", "Courier New", monospace;   /* font */                           
 }
 
 /* Content of table of contents */
@@ -43,6 +44,7 @@ li[class="section-link"] {
     padding-bottom: 10px;                               /* padding long */
     padding-left: 0px;                                  /* padding long */
     padding-right: 0px;                                 /* padding long */
+    font-family: "Courier New", "Courier New", monospace; /* font */
 
 }
 
@@ -50,6 +52,7 @@ li[class="section-link"] {
 #meeting-subtitle {
     text-align: center;                                 /* text */
     padding: 0px 0px 10px 0px;                         /* padding short */
+    font-family: "Courier New", "Courier New", monospace;   /* font */
 }
 
 /* section titles */
@@ -108,3 +111,11 @@ p {
     position: static;                                   /* position */
 }
 
+/* button for submit */
+button:hover {
+    cursor: pointer;
+}
+
+a:active {
+    color: red;
+}
